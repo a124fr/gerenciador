@@ -12,17 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
 
-public class ListaEmpresas {
+public class ListaEmpresas implements Acao {
 	
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		System.out.println("Ação listando empresas");
 		
 		List<Empresa> lista = Banco.getEmpresas();
 		PrintWriter out = response.getWriter();
 		
 		request.setAttribute("empresas", lista);
-		RequestDispatcher rd = request.getRequestDispatcher("/lista_empresas.jsp");
-		rd.forward(request, response);	
-	}
-	
+		
+		return "forward:lista_empresas.jsp";
+	}	
 }
