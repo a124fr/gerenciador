@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.alura.gerenciador.modelo.Banco;
 
-@WebServlet("/remove_empresa")
+//@WebServlet("/remove_empresa")
 public class RemoveEmpresaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 		
