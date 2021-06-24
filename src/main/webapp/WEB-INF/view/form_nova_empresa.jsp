@@ -10,6 +10,8 @@
 <title>Formulário Nova Empresa</title>
 </head>
 <body>
+	<c:import url="logout-parcial.jsp"/>
+
 	<form method="POST" action="${linkEntradaServlet}">
 		<input type="hidden" name="acao" value="NovaEmpresa" />
 		Nome: <input type="text" name="nome" />
