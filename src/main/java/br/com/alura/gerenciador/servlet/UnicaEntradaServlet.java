@@ -37,31 +37,7 @@ public class UnicaEntradaServlet extends HttpServlet {
 			
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {			
 			throw new ServletException(e);
-		}	
-		
-//		if(paramAcao.equals("lista_empresas")) {
-//			ListaEmpresas acao = new ListaEmpresas();
-//			nome = acao.executa(request, response);			
-//			
-//		} else if(paramAcao.equals("remove_empresa")) {
-//			RemoveEmpresa acao = new RemoveEmpresa();
-//			nome = acao.executa(request, response);
-//			
-//		} else if(paramAcao.equals("mostra_empresa")) {
-//			MostraEmpresa acao = new MostraEmpresa();
-//			nome = acao.executa(request, response);
-//			
-//		} else if(paramAcao.equals("altera_empresa")) {
-//			AlteraEmpresa acao = new AlteraEmpresa();
-//			nome = acao.executa(request, response);
-//			
-//		} else if(paramAcao.equals("nova_empresa")) {
-//			NovaEmpresa acao = new NovaEmpresa();
-//			nome = acao.executa(request, response);			
-//		} else if(paramAcao.equals("form_nova_empresa")) {
-//			NovaEmpresaForm acao = new NovaEmpresaForm();
-//			nome = acao.executa(request, response);			
-//		}
+		}
 		
 		String[] nomes = nome.split(":");
 				
