@@ -12,6 +12,9 @@
 <title>Java Standard TagLib</title>
 </head>
 <body>
+	Usuário Logado: ${usuarioLogado.login} - <a href="${linkEntradaServlet}?acao=Logout">Sair</a>
+	
+	<br/>
 
 	<c:if test="${not empty empresa}">
 		<p>Empresa ${empresa} cadastrada com sucesso!</p>
